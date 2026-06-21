@@ -16,6 +16,9 @@
   <!-- Phosphor Icons -->
   <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -75,6 +78,9 @@
 
   <!-- Hero Section -->
   <header class="hero-canvas" id="hero">
+    <!-- Three.js 3D Background -->
+    <canvas id="three-canvas"></canvas>
+
     <!-- Premium Background Glows -->
     <div class="hero-glow-1"></div>
     <div class="hero-glow-2"></div>
@@ -962,6 +968,7 @@
   </button>
 
   <script src="script.js"></script>
+  <script src="three-bg.js"></script>
 </body>
 
 </html>
