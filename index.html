@@ -1,467 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ar" dir="ltr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Asmaa | Senior Content Writer & Copywriter</title>
-  <meta name="description"
-    content="Senior Content Writer & Copywriter specializing in luxury brands, social media campaigns, brand voice positioning, and website content for Saudi Arabia, GCC, and Egypt." />
+  <title>أسماء | كاتبة محتوى ومؤلفة نصوص</title>
+  <meta name="description" content="أساعد العلامات التجارية في العثور على الكلمات المناسبة. صياغة تواصل راقٍ ونسخ تسويقية مؤثرة للسوق الحديث." />
 
-  <!-- Premium Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Phosphor Icons -->
-  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
-
-  <!-- Three.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <!-- Custom Luxury Cursor -->
-  <div class="custom-cursor" id="custom-cursor"></div>
-  <div class="custom-cursor-follower" id="custom-cursor-follower"></div>
 
-  <!-- Cinematic Preloader -->
+  <!-- ========== PRELOADER ========== -->
   <div class="preloader" id="preloader">
     <div class="preloader-content">
-      <div class="preloader-text-wrap">
-        <span class="preloader-word">CLARITY.</span>
-        <span class="preloader-word">PURPOSE.</span>
-        <span class="preloader-word">IMPACT.</span>
-      </div>
-      <div class="preloader-line">
-        <div class="preloader-line-progress"></div>
-      </div>
+      <div class="preloader-ring"></div>
+      <p class="preloader-text">ASMAA</p>
     </div>
   </div>
 
-  <!-- Premium Navigation -->
-  <nav class="luxury-nav" id="luxury-nav">
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#" class="nav-logo magnetic-target">
-        <span>ASMAA</span>
-        <span class="logo-dot"></span>
-        <span class="logo-sub">STUDIO</span>
-      </a>
+      <a href="#" class="nav-logo">Asmaa.</a>
       <div class="nav-links">
-        <a href="#philosophy" class="nav-link magnetic-target">About</a>
-        <a href="#spectrum" class="nav-link magnetic-target">Industries</a>
-        <a href="#craft" class="nav-link magnetic-target">Services</a>
-        <a href="#chronicles" class="nav-link magnetic-target">Portfolio</a>
-        <a href="#narrative" class="nav-link magnetic-target">Experience</a>
-        <a href="#dialogue" class="nav-link nav-cta magnetic-target">Contact</a>
+        <a href="#about" class="nav-link">من أنا</a>
+        <a href="#services" class="nav-link">خدماتي</a>
+        <a href="#clients" class="nav-link">العملاء</a>
+        <a href="#portfolio" class="nav-link">أعمالي</a>
+        <a href="#contact" class="nav-link nav-cta">تواصل معي</a>
       </div>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
+      <button class="nav-toggle" id="nav-toggle" aria-label="القائمة">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
   </nav>
 
-  <!-- Mobile Menu Overlay -->
+  <!-- ========== MOBILE MENU ========== -->
   <div class="mobile-menu" id="mobile-menu">
-    <div class="mobile-menu-links">
-      <a href="#philosophy" class="mobile-link">About</a>
-      <a href="#spectrum" class="mobile-link">Industries</a>
-      <a href="#craft" class="mobile-link">Services</a>
-      <a href="#chronicles" class="mobile-link">Portfolio</a>
-      <a href="#narrative" class="mobile-link">Experience</a>
-      <a href="#dialogue" class="mobile-link mobile-cta">Contact</a>
+    <div class="mobile-menu-inner">
+      <a href="#about" class="mobile-link">من أنا</a>
+      <a href="#services" class="mobile-link">خدماتي</a>
+      <a href="#clients" class="mobile-link">العملاء</a>
+      <a href="#portfolio" class="mobile-link">أعمالي</a>
+      <a href="#contact" class="mobile-link mobile-cta-btn">تواصل معي</a>
     </div>
   </div>
 
-  <!-- Hero Section -->
-  <header class="hero-canvas" id="hero">
-    <!-- Three.js 3D Background -->
-    <canvas id="three-canvas"></canvas>
-
-    <!-- Premium Background Glows -->
-    <div class="hero-glow-1"></div>
-    <div class="hero-glow-2"></div>
-
-    <div class="hero-grid">
-      <!-- Left Column: Typography & Narrative -->
-      <div class="hero-narrative">
-        <!-- Availability & Location Header -->
-        <div class="hero-status-row fade-in-up">
-          <div class="status-indicator">
-            <span class="status-dot"></span>
-            <span class="status-text">Available for Q3-Q4 2026 Projects</span>
-          </div>
-          <span class="status-separator">|</span>
-          <div class="status-location">Based in Cairo, Serving Riyadh & GCC</div>
-        </div>
-
-        <div class="editorial-tag fade-in-up">ASMAA STUDIO / COPY & CAMPAIGNS</div>
-        
-        <h1 class="hero-headline fade-in-up">
-          CRAFTING COUTURE COPY<br>
-          <span class="serif-italic">that designs perception &</span><br>
-          SECURES CONVERSIONS
-        </h1>
-        
-        <div class="hero-subheadline fade-in-up">
-          <span>Senior Content Writer</span>
-          <span class="divider-dot"></span>
-          <span>Conversion Copywriter</span>
-          <span class="divider-dot"></span>
-          <span>Brand Voice Architect</span>
-        </div>
-        
-        <p class="hero-description fade-in-up">
-          I shape strategic copy assets that build authority, connect with Gulf & Egyptian demographics, and translate business vision into high-performing social campaigns, websites, and luxury communication.
-        </p>
-
-        <!-- Premium Micro-stats / Credibility Grid -->
-        <div class="hero-credibility-grid fade-in-up">
-          <div class="cred-item">
-            <span class="cred-num">4+</span>
-            <span class="cred-label">Years Experience</span>
-          </div>
-          <div class="cred-item">
-            <span class="cred-num">100+</span>
-            <span class="cred-label">Projects Completed</span>
-          </div>
-          <div class="cred-item">
-            <span class="cred-num">35+</span>
-            <span class="cred-label">Sectors Mastered</span>
-          </div>
-        </div>
-        
-        <div class="hero-actions fade-in-up">
-          <a href="#dialogue" class="btn btn-primary magnetic-target">
-            <span>Initiate Collaboration</span>
-            <i class="ph ph-arrow-right btn-arrow"></i>
-          </a>
-          <a href="#chronicles" class="btn btn-secondary magnetic-target">
-            <span>Explore Portfolio</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Right Column: Visual Frame -->
-      <div class="hero-visual-frame fade-in-up">
-        <div class="image-frame-decorator-back"></div>
-        <div class="image-wrapper">
-          <img src="assets/portrait.png" alt="Asmaa - Senior Copywriter" class="hero-portrait" />
-          <div class="image-overlay-glow"></div>
-        </div>
-        <div class="luxury-badge">
-          <span class="badge-text">GCC & SAUDI MARKET SPECIALIST</span>
-        </div>
-        <!-- Floating Credential Card -->
-        <div class="floating-credentials-card">
-          <span class="floating-card-title">BILINGUAL EXPERTISE</span>
-          <p>English & Gulf Arabic Copywriting</p>
-        </div>
-      </div>
+  <!-- ========== HERO ========== -->
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-text">Content Writer & Copywriter</div>
+      <h1 class="hero-title reveal-text">
+        I help brands find<br>
+        <span class="hero-title-accent">the right words</span>
+      </h1>
+      <p class="hero-sub reveal-text">صياغة تواصل راقٍ ونسخ تسويقية مؤثرة للسوق الحديث.</p>
+      <a href="#contact" class="hero-btn reveal-text">
+        تواصل معي
+        <i class="fas fa-arrow-left"></i>
+      </a>
     </div>
-    
-    <!-- Floating Sand Ripple Texture Overlay -->
-    <div class="hero-sand-texture" style="background-image: url('assets/sand-texture.png');"></div>
-    
-    <!-- Scroll Down indicator -->
-    <a href="#philosophy" class="scroll-indicator magnetic-target">
-      <span class="scroll-text">SCROLL TO EXPLORE</span>
+
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
       <div class="scroll-line"></div>
-    </a>
+    </div>
   </header>
 
-  <!-- Section: About (The Copywriter's Mindset) -->
-  <section class="section-canvas philosophy-section" id="philosophy">
-    <canvas class="section-canvas-3d" id="three-about"></canvas>
+  <!-- ========== DIVIDER 1 ========== -->
+  <section class="divider-section reveal-divider">
+    <div class="divider-content">
+      <p class="divider-ar">"الكلمة ليست مجرد أداة.. إنها هوية."</p>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about-section" id="about">
     <div class="container">
-      <div class="editorial-grid">
-        <div class="grid-left">
-          <span class="section-index">01 / ABOUT ASMAA</span>
-          <h2 class="editorial-title">
-            SHAPING BRAND VOICES<br>
-            <span class="serif-italic">that shift perception</span><br>
-            & COMMAND AUTHORITY.
-          </h2>
-          
-          <!-- Key Details Grid -->
-          <div class="about-quick-specs">
-            <div class="spec-row">
-              <span class="spec-label">ROLE</span>
-              <span class="spec-value">Senior Copywriter & Voice Architect</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">MARKETS</span>
-              <span class="spec-value">Saudi Arabia, GCC Region, Egypt</span>
-            </div>
-            <div class="spec-row">
-              <span class="spec-label">EXPERTISE</span>
-              <span class="spec-value">Social Campaigns, SEO Web Copy, Luxury Branding</span>
-            </div>
+      <div class="about-grid">
+        <div class="about-image-wrap reveal-left">
+          <div class="about-image-frame">
+            <img src="assets/portrait.png" alt="أسماء - كاتبة محتوى" class="about-image" />
           </div>
+          <div class="about-image-badge">4+ سنوات خبرة</div>
         </div>
-        
-        <div class="grid-right">
-          <p class="editorial-lead">
-            Words are not placeholders. They are strategic assets engineered to design brand perception, establish market positioning, and secure customer trust.
-          </p>
-          <p class="editorial-text">
-            I don’t just write copy. I study audiences, analyze buyer personas, and craft bespoke brand voices that resonate in the Gulf and Egyptian markets. Whether it’s building a narrative for a high-end luxury brand, driving conversions for an e-commerce platform, or establishing trust for medical brands, I focus on strategy, positioning, and absolute clarity.
-          </p>
-          <p class="editorial-text">
-            By merging psychological persuasion with localized cultural nuances, I help brands communicate with purpose and achieve commercial impact that lasts.
-          </p>
-          
-          <!-- Signature -->
-          <div class="about-signature-wrap">
-            <span class="signature-title">CRAFTED WITH PURPOSE,</span>
-            <div class="about-signature">Asmaa Adel</div>
+        <div class="about-text-wrap reveal-right">
+          <span class="section-label">من أنا</span>
+          <h2 class="section-title-en">Behind every great brand,<br>there's a great story.</h2>
+          <p class="about-desc">خلف كل علامة تجارية عظيمة، قصة عظيمة.</p>
+          <div class="about-text">
+            <p>أنا كاتبة محتوى ومؤلفة نصوص محترفة مع أكثر من 4 سنوات من الخبرة في صياغة المحتوى التسويقي والنصوص الإعلانية لأكثر من 35 مجالاً مختلفاً. أساعد العلامات التجارية في إيجاد صوتها الخاص والتواصل مع جمهورها بطريقة مؤثرة.</p>
+            <p>عملت مع علامات تجارية في مجالات: الأزياء، المجوهرات، مستحضرات التجميل، العيادات الطبية، المطاعم، الفنادق، التكنولوجيا، والعديد من المجالات الأخرى.</p>
           </div>
-        </div>
-      </div>
 
-      <!-- Copywriting Methodology Pillars -->
-      <div class="methodology-grid scroll-reveal">
-        <div class="methodology-card">
-          <span class="methodology-num">01</span>
-          <h3 class="methodology-title">Cultural Alignment</h3>
-          <p class="methodology-desc">Deep-diving into Gulf & Egyptian dialects, buyer behaviors, and local search trends to build high-intent copy vectors.</p>
-        </div>
-        
-        <div class="methodology-card">
-          <span class="methodology-num">02</span>
-          <h3 class="methodology-title">Voice Architecture</h3>
-          <p class="methodology-desc">Structuring signature brand dictionaries, tonal boundaries, and emotional triggers to secure long-term market authority.</p>
-        </div>
-        
-        <div class="methodology-card">
-          <span class="methodology-num">03</span>
-          <h3 class="methodology-title">Psychological Persuasion</h3>
-          <p class="methodology-desc">Applying structured copywriting frameworks (AIDA, PAS) to capture attention, define problems, and activate immediate conversion.</p>
-        </div>
-      </div>
-
-      <!-- Animated Counters -->
-      <div class="stats-row scroll-reveal">
-        <div class="stat-box">
-          <div class="stat-num" data-target="4">0</div>
-          <div class="stat-label">Years of Strategic Experience</div>
-          <p class="stat-desc">Proven track record in localized advertising and brand messaging.</p>
-        </div>
-        <div class="stat-box">
-          <div class="stat-num" data-target="35">0</div>
-          <div class="stat-label">Industries Mastered</div>
-          <p class="stat-desc">From high-end fashion and medical centers to corporate technology.</p>
-        </div>
-        <div class="stat-box">
-          <div class="stat-num" data-target="100">0</div>
-          <div class="stat-label">Successful Projects Completed</div>
-          <p class="stat-desc">Delivering high-converting copy assets across the Middle East.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section: Spectrum (Industries) -->
-  <section class="section-canvas spectrum-section" id="spectrum">
-    <div class="section-header container">
-      <span class="section-index">01 / DIVERSIFIED SECTORS</span>
-      <h2 class="section-title">THE SPECTRUM OF EXPERTISE</h2>
-      <p class="section-subtitle">A curated layout of sectors where Asmaa has successfully driven brand positioning and copywriting campaigns.</p>
-    </div>
-
-    <!-- Infinite Moving Marquees -->
-    <div class="marquee-container">
-      <!-- Marquee 1: Left to Right -->
-      <div class="marquee-track marquee-ltr">
-        <div class="marquee-content">
-          <span>LUXURY BRANDS</span>
-          <span class="marquee-dot"></span>
-          <span>FASHION BRANDS</span>
-          <span class="marquee-dot"></span>
-          <span>JEWELRY & ACCESSORIES</span>
-          <span class="marquee-dot"></span>
-          <span>COSMETICS & SKINCARE</span>
-          <span class="marquee-dot"></span>
-          <span>PERFUMES & FRAGRANCES</span>
-          <span class="marquee-dot"></span>
-          <span>PERSONAL BRANDS</span>
-          <span class="marquee-dot"></span>
-        </div>
-        <!-- Duplicate for loop -->
-        <div class="marquee-content" aria-hidden="true">
-          <span>LUXURY BRANDS</span>
-          <span class="marquee-dot"></span>
-          <span>FASHION BRANDS</span>
-          <span class="marquee-dot"></span>
-          <span>JEWELRY & ACCESSORIES</span>
-          <span class="marquee-dot"></span>
-          <span>COSMETICS & SKINCARE</span>
-          <span class="marquee-dot"></span>
-          <span>PERFUMES & FRAGRANCES</span>
-          <span class="marquee-dot"></span>
-          <span>PERSONAL BRANDS</span>
-          <span class="marquee-dot"></span>
-        </div>
-      </div>
-
-      <!-- Marquee 2: Right to Left -->
-      <div class="marquee-track marquee-rtl">
-        <div class="marquee-content">
-          <span>HOSPITALITY & HOTELS</span>
-          <span class="marquee-dot"></span>
-          <span>RESTAURANTS & CAFÉS</span>
-          <span class="marquee-dot"></span>
-          <span>BEAUTY CLINICS & SPAS</span>
-          <span class="marquee-dot"></span>
-          <span>MEDICAL CENTERS</span>
-          <span class="marquee-dot"></span>
-          <span>DENTAL & VETERINARY</span>
-          <span class="marquee-dot"></span>
-          <span>NUTRITION & SUPPLEMENTS</span>
-          <span class="marquee-dot"></span>
-        </div>
-        <!-- Duplicate for loop -->
-        <div class="marquee-content" aria-hidden="true">
-          <span>HOSPITALITY & HOTELS</span>
-          <span class="marquee-dot"></span>
-          <span>RESTAURANTS & CAFÉS</span>
-          <span class="marquee-dot"></span>
-          <span>BEAUTY CLINICS & SPAS</span>
-          <span class="marquee-dot"></span>
-          <span>MEDICAL CENTERS</span>
-          <span class="marquee-dot"></span>
-          <span>DENTAL & VETERINARY</span>
-          <span class="marquee-dot"></span>
-          <span>NUTRITION & SUPPLEMENTS</span>
-          <span class="marquee-dot"></span>
-        </div>
-      </div>
-
-      <!-- Marquee 3: Left to Right -->
-      <div class="marquee-track marquee-ltr">
-        <div class="marquee-content">
-          <span>E-COMMERCE STORES</span>
-          <span class="marquee-dot"></span>
-          <span>STARTUPS & B2B SERVICES</span>
-          <span class="marquee-dot"></span>
-          <span>DIGITAL MARKETING AGENCIES</span>
-          <span class="marquee-dot"></span>
-          <span>CONSULTING SERVICES</span>
-          <span class="marquee-dot"></span>
-          <span>EDUCATIONAL PLATFORMS</span>
-          <span class="marquee-dot"></span>
-          <span>HOME DECOR & INTERIORS</span>
-          <span class="marquee-dot"></span>
-          <span>LOGISTICS & AUTOMATION</span>
-          <span class="marquee-dot"></span>
-        </div>
-        <!-- Duplicate for loop -->
-        <div class="marquee-content" aria-hidden="true">
-          <span>E-COMMERCE STORES</span>
-          <span class="marquee-dot"></span>
-          <span>STARTUPS & B2B SERVICES</span>
-          <span class="marquee-dot"></span>
-          <span>DIGITAL MARKETING AGENCIES</span>
-          <span class="marquee-dot"></span>
-          <span>CONSULTING SERVICES</span>
-          <span class="marquee-dot"></span>
-          <span>EDUCATIONAL PLATFORMS</span>
-          <span class="marquee-dot"></span>
-          <span>HOME DECOR & INTERIORS</span>
-          <span class="marquee-dot"></span>
-          <span>LOGISTICS & AUTOMATION</span>
-          <span class="marquee-dot"></span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Interactive Industry Explorer -->
-    <div class="container industry-explorer-container scroll-reveal">
-      <div class="explorer-tabs">
-        <button class="explorer-tab-btn active magnetic-target" data-sector="lifestyle">Lifestyle & Luxury</button>
-        <button class="explorer-tab-btn magnetic-target" data-sector="tech-corp">Tech & Corporate</button>
-        <button class="explorer-tab-btn magnetic-target" data-sector="medical">Medical & Wellness</button>
-        <button class="explorer-tab-btn magnetic-target" data-sector="hospitality">Hospitality & F&B</button>
-      </div>
-
-      <div class="explorer-panels">
-        <!-- Lifestyle & Luxury -->
-        <div class="explorer-panel active" id="sector-lifestyle">
-          <div class="panel-grid">
-            <div class="panel-desc">
-              <h3>Elevating desire through sensory storytelling.</h3>
-              <p>In the luxury space, copy must feel as refined and exclusive as the product. I focus on emotional branding, prestige cues, and heritage narratives.</p>
+          <!-- COUNTERS -->
+          <div class="counters-row" id="counters-row">
+            <div class="counter-item">
+              <span class="counter-num" data-target="35">0</span>
+              <span class="counter-plus">+</span>
+              <span class="counter-label">مجال</span>
             </div>
-            <div class="panel-tags">
-              <span class="explorer-tag">Luxury Brands</span>
-              <span class="explorer-tag">Fashion Designers</span>
-              <span class="explorer-tag">Fine Jewelry</span>
-              <span class="explorer-tag">Cosmetics</span>
-              <span class="explorer-tag">Skincare & Haircare</span>
-              <span class="explorer-tag">Perfumes & Fragrances</span>
-              <span class="explorer-tag">Personal Brands</span>
-              <span class="explorer-tag">Home Decor & Interiors</span>
+            <div class="counter-item">
+              <span class="counter-num" data-target="4">0</span>
+              <span class="counter-plus">+</span>
+              <span class="counter-label">سنوات خبرة</span>
             </div>
-          </div>
-        </div>
-
-        <!-- Tech & Corporate -->
-        <div class="explorer-panel" id="sector-tech-corp">
-          <div class="panel-grid">
-            <div class="panel-desc">
-              <h3>Translating complexity into value.</h3>
-              <p>For B2B services, SaaS, startups, and logistics companies, I demystify complex operations, highlighting business outcomes and efficiency metrics.</p>
-            </div>
-            <div class="panel-tags">
-              <span class="explorer-tag">Startups</span>
-              <span class="explorer-tag">Digital Marketing Agencies</span>
-              <span class="explorer-tag">B2B Services</span>
-              <span class="explorer-tag">Consulting Services</span>
-              <span class="explorer-tag">Logistics & Shipping</span>
-              <span class="explorer-tag">Fleet Management</span>
-              <span class="explorer-tag">Smart Automation Systems</span>
-              <span class="explorer-tag">Educational Platforms</span>
-              <span class="explorer-tag">Engineering Companies</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Medical & Wellness -->
-        <div class="explorer-panel" id="sector-medical">
-          <div class="panel-grid">
-            <div class="panel-desc">
-              <h3>Building authority and patient trust.</h3>
-              <p>Healthcare communication requires precision, empathy, and absolute credibility. I combine clinical accuracy with accessible, reassuring narratives.</p>
-            </div>
-            <div class="panel-tags">
-              <span class="explorer-tag">Medical Clinics & Centers</span>
-              <span class="explorer-tag">Beauty & Anti-Aging Clinics</span>
-              <span class="explorer-tag">Dental Clinics</span>
-              <span class="explorer-tag">Spa & Wellness Centers</span>
-              <span class="explorer-tag">Nutrition & Supplements</span>
-              <span class="explorer-tag">Veterinary Clinics</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Hospitality & F&B -->
-        <div class="explorer-panel" id="sector-hospitality">
-          <div class="panel-grid">
-            <div class="panel-desc">
-              <h3>Crafting immersive sensory experiences.</h3>
-              <p>For restaurants, cafes, and hotels, my content highlights culinary stories, ambient elegance, and luxury hospitality service standards.</p>
-            </div>
-            <div class="panel-tags">
-              <span class="explorer-tag">Luxury Resorts & Hotels</span>
-              <span class="explorer-tag">Fine Dining Restaurants</span>
-              <span class="explorer-tag">Specialty Cafés</span>
-              <span class="explorer-tag">Artisanal Bakeries</span>
-              <span class="explorer-tag">Catering Services</span>
-              <span class="explorer-tag">Residential Compounds</span>
-              <span class="explorer-tag">Entertainment Venues</span>
+            <div class="counter-item">
+              <span class="counter-num" data-target="100">0</span>
+              <span class="counter-plus">+</span>
+              <span class="counter-label">مشروع</span>
             </div>
           </div>
         </div>
@@ -469,511 +125,394 @@
     </div>
   </section>
 
-  <!-- Section: Craft (Services) -->
-  <section class="section-canvas craft-section" id="craft">
-    <canvas class="section-canvas-3d" id="three-services"></canvas>
+  <!-- ========== DIVIDER 2 ========== -->
+  <section class="divider-section reveal-divider">
+    <div class="divider-content">
+      <p class="divider-ar">"لكل علامة تجارية صوتها الخاص."</p>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="section services-section" id="services">
     <div class="container">
-      <div class="section-header">
-        <span class="section-index">02 / CORE CAPABILITIES</span>
-        <h2 class="section-title">THE CAPABILITIES DESIGNED TO CONVERT</h2>
-        <p class="section-subtitle">How I help brands communicate with clarity, purpose, and commercial impact.</p>
+      <div class="section-header-center">
+        <span class="section-label">خدماتي</span>
+        <h2 class="section-title-ar">حرفتي</h2>
+        <p class="section-sub">أحول الأفكار إلى كلمات تبني هويات وتبيع</p>
       </div>
 
-      <div class="craft-grid scroll-reveal">
-        <!-- Service 1: Social Media Content -->
-        <div class="craft-card">
-          <div class="craft-icon-wrap">
-            <i class="ph ph-instagram-logo craft-icon"></i>
+      <div class="services-grid reveal-cards">
+        <div class="service-card">
+          <div class="card-icon">
+            <i class="fas fa-handshake"></i>
           </div>
-          <span class="craft-number">01</span>
-          <h3 class="craft-title">Social Media Content</h3>
-          <p class="craft-desc">Engaging, platform-specific content designed to strengthen brand presence, trigger conversations, and foster community alignment.</p>
-          <ul class="craft-deliverables">
-            <li>GCC-targeted Content Calendars</li>
-            <li>Interactive Thread Concepting</li>
-            <li>Video Reel & TikTok Scripts</li>
-          </ul>
+          <h3 class="card-title">التواصل مع العلامات</h3>
+          <p class="card-text">بناء هوية تواصلية متكاملة للعلامات التجارية تعكس قيمها ورسالتها وتخاطب جمهورها بلغة مؤثرة.</p>
         </div>
 
-        <!-- Service 2: Copywriting -->
-        <div class="craft-card">
-          <div class="craft-icon-wrap">
-            <i class="ph ph-pen-nib craft-icon"></i>
+        <div class="service-card">
+          <div class="card-icon">
+            <i class="fas fa-hashtag"></i>
           </div>
-          <span class="craft-number">02</span>
-          <h3 class="craft-title">Copywriting</h3>
-          <p class="craft-desc">Persuasive ad copies, sales letters, and marketing communication engineered to command attention and trigger immediate conversion.</p>
-          <ul class="craft-deliverables">
-            <li>Meta & Snap Ads Copy</li>
-            <li>Google Search Copywriting</li>
-            <li>Promotional Campaign Material</li>
-          </ul>
+          <h3 class="card-title">محتوى السوشيال ميديا</h3>
+          <p class="card-text">صياغة محتوى إبداعي لمنصات التواصل الاجتماعي يزيد التفاعل ويبني مجتمعاً حول علامتك التجارية.</p>
         </div>
 
-        <!-- Service 3: Website Content -->
-        <div class="craft-card">
-          <div class="craft-icon-wrap">
-            <i class="ph ph-monitor craft-icon"></i>
+        <div class="service-card">
+          <div class="card-icon">
+            <i class="fas fa-bullhorn"></i>
           </div>
-          <span class="craft-number">03</span>
-          <h3 class="craft-title">Website Content</h3>
-          <p class="craft-desc">Structured, SEO-friendly, and brand-aligned website copy that clearly reflects the professional identity of corporate entities.</p>
-          <ul class="craft-deliverables">
-            <li>Corporate Identity Copy</li>
-            <li>SEO Blog Articles & Guides</li>
-            <li>UX Copywriting & Microcopy</li>
-          </ul>
+          <h3 class="card-title">النصوص الإعلانية</h3>
+          <p class="card-text">كتابة نصوص إعلانية مقنعة للاندينج بيج والحملات الإعلانية تحقق أعلى نسب تحويل.</p>
         </div>
 
-        <!-- Service 4: Content Strategy -->
-        <div class="craft-card">
-          <div class="craft-icon-wrap">
-            <i class="ph ph-compass craft-icon"></i>
+        <div class="service-card">
+          <div class="card-icon">
+            <i class="fas fa-globe"></i>
           </div>
-          <span class="craft-number">04</span>
-          <h3 class="craft-title">Content Strategy</h3>
-          <p class="craft-desc">Developing the foundational brand voice, positioning vectors, and structured communication direction for long-term growth.</p>
-          <ul class="craft-deliverables">
-            <li>Brand Tone of Voice Guidelines</li>
-            <li>Competitor Content Audits</li>
-            <li>Audience Persona Mapping</li>
-          </ul>
-        </div>
-
-        <!-- Service 5: Landing Pages -->
-        <div class="craft-card">
-          <div class="craft-icon-wrap">
-            <i class="ph ph-cursor-click craft-icon"></i>
-          </div>
-          <span class="craft-number">05</span>
-          <h3 class="craft-title">Landing Pages</h3>
-          <p class="craft-desc">High-intent landing page messaging focused purely on value articulation, lead generation, and user activation.</p>
-          <ul class="craft-deliverables">
-            <li>AIDA & PAS Structured Copy</li>
-            <li>CTA Placement & Scripting</li>
-            <li>Lead Magnet Development</li>
-          </ul>
-        </div>
-
-        <!-- Service 6: Brand Communication -->
-        <div class="craft-card">
-          <div class="craft-icon-wrap">
-            <i class="ph ph-megaphone-simple craft-icon"></i>
-          </div>
-          <span class="craft-number">06</span>
-          <h3 class="craft-title">Brand Communication</h3>
-          <p class="craft-desc">Helping corporate leaders, consultants, and luxury enterprises establish authority through precise, consistent copy vectors.</p>
-          <ul class="craft-deliverables">
-            <li>LinkedIn Thought Leadership</li>
-            <li>Company Profiles & Brochures</li>
-            <li>Press Releases & PR Materials</li>
-          </ul>
+          <h3 class="card-title">محتوى المواقع</h3>
+          <p class="card-text">صياغة محتوى متكامل للمواقع الإلكترونية يجمع بين الإبداع وتحسين محركات البحث.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section: Chronicles (Interactive Portfolio) -->
-  <section class="section-canvas chronicles-section" id="chronicles">
-    <canvas class="section-canvas-3d" id="three-portfolio"></canvas>
+  <!-- ========== DIVIDER 3 ========== -->
+  <section class="divider-section reveal-divider">
+    <div class="divider-content">
+      <p class="divider-ar">"الأفكار العظيمة تبدأ بكلمة."</p>
+    </div>
+  </section>
+
+  <!-- ========== CLIENTS ========== -->
+  <section class="section clients-section" id="clients">
     <div class="container">
-      <div class="section-header-row">
-        <div>
-          <span class="section-index">03 / CASE DIRECTORY</span>
-          <h2 class="section-title">SELECTED CHRONICLES</h2>
+      <div class="section-header-center">
+        <span class="section-label">العملاء</span>
+        <h2 class="section-title-en">Trusted across</h2>
+        <p class="section-title-ar-large">موثوق بها في أكثر من 35 مجالاً</p>
+      </div>
+    </div>
+
+    <div class="clients-marquee-container">
+      <div class="clients-track track-right" id="track-1">
+        <div class="track-content">
+          <span>العلامات الشخصية</span>
+          <span class="sep">✦</span>
+          <span>وكالات التسويق</span>
+          <span class="sep">✦</span>
+          <span>الأزياء</span>
+          <span class="sep">✦</span>
+          <span>المجوهرات</span>
+          <span class="sep">✦</span>
+          <span>مستحضرات التجميل</span>
+          <span class="sep">✦</span>
+          <span>العيادات</span>
+          <span class="sep">✦</span>
+          <span>المطاعم</span>
+          <span class="sep">✦</span>
+          <span>الفنادق</span>
+          <span class="sep">✦</span>
         </div>
-        <div class="chronicles-filter">
-          <button class="filter-btn active magnetic-target" data-filter="all">All Chronicles</button>
-          <button class="filter-btn magnetic-target" data-filter="campaigns">Social & Campaigns</button>
-          <button class="filter-btn magnetic-target" data-filter="editorial">Web & Editorial</button>
+        <div class="track-content" aria-hidden="true">
+          <span>العلامات الشخصية</span>
+          <span class="sep">✦</span>
+          <span>وكالات التسويق</span>
+          <span class="sep">✦</span>
+          <span>الأزياء</span>
+          <span class="sep">✦</span>
+          <span>المجوهرات</span>
+          <span class="sep">✦</span>
+          <span>مستحضرات التجميل</span>
+          <span class="sep">✦</span>
+          <span>العيادات</span>
+          <span class="sep">✦</span>
+          <span>المطاعم</span>
+          <span class="sep">✦</span>
+          <span>الفنادق</span>
+          <span class="sep">✦</span>
         </div>
       </div>
-
-      <div class="chronicles-grid scroll-reveal">
-        <!-- Project 1: Virginia -->
-        <article class="chronicle-card" data-category="campaigns" data-project="virginia">
-          <div class="card-image-wrap">
-            <div class="card-bg-placeholder" style="background-color: #2F7C7A;"></div>
-            <div class="card-info-overlay">
-              <span class="project-tag">LUXURY BEAUTY & COSMETICS</span>
-              <h3 class="project-title">VIRGINIA</h3>
-              <p class="project-tagline">Sensory storytelling & social media launch campaigns.</p>
-            </div>
-            <div class="card-reveal-btn">
-              <span>EXPLORE COPY CASE</span>
-              <i class="ph ph-arrow-right" style="font-size: 16px;"></i>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 2: Lee Parc -->
-        <article class="chronicle-card" data-category="campaigns" data-project="leeparc">
-          <div class="card-image-wrap">
-            <div class="card-bg-placeholder" style="background-color: #A7BEC1;"></div>
-            <div class="card-info-overlay">
-              <span class="project-tag">HOSPITALITY & LIVING</span>
-              <h3 class="project-title">LEE PARC</h3>
-              <p class="project-tagline">Premium content planning and ambient lifestyle branding.</p>
-            </div>
-            <div class="card-reveal-btn">
-              <span>EXPLORE COPY CASE</span>
-              <i class="ph ph-arrow-right" style="font-size: 16px;"></i>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 3: Alwajeeh Telecom -->
-        <article class="chronicle-card" data-category="campaigns" data-project="alwajeeh">
-          <div class="card-image-wrap">
-            <div class="card-bg-placeholder" style="background-color: #FFD248; color: #123837;"></div>
-            <div class="card-info-overlay">
-              <span class="project-tag">E-COMMERCE & RETAIL</span>
-              <h3 class="project-title">ALWAJEEH TELECOM</h3>
-              <p class="project-tagline">Saudi Arabia-targeted telecom campaigns and copywriting.</p>
-            </div>
-            <div class="card-reveal-btn">
-              <span>EXPLORE COPY CASE</span>
-              <i class="ph ph-arrow-right" style="font-size: 16px;"></i>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 4: Tomato Agency -->
-        <article class="chronicle-card" data-category="editorial" data-project="tomato">
-          <div class="card-image-wrap">
-            <div class="card-bg-placeholder" style="background-color: #1A4E4C;"></div>
-            <div class="card-info-overlay">
-              <span class="project-tag">DIGITAL MARKETING AGENCY</span>
-              <h3 class="project-title">TOMATO AGENCY</h3>
-              <p class="project-tagline">Strategic brand voice consulting and internal marketing collateral.</p>
-            </div>
-            <div class="card-reveal-btn">
-              <span>EXPLORE COPY CASE</span>
-              <i class="ph ph-arrow-right" style="font-size: 16px;"></i>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 5: Extra Sales Agency -->
-        <article class="chronicle-card" data-category="editorial" data-project="extra">
-          <div class="card-image-wrap">
-            <div class="card-bg-placeholder" style="background-color: #2F7C7A;"></div>
-            <div class="card-info-overlay">
-              <span class="project-tag">B2B SERVICES & SALES</span>
-              <h3 class="project-title">EXTRA SALES AGENCY</h3>
-              <p class="project-tagline">High-converting SEO and Digital Marketing guides for regional growth.</p>
-            </div>
-            <div class="card-reveal-btn">
-              <span>EXPLORE COPY CASE</span>
-              <i class="ph ph-arrow-right" style="font-size: 16px;"></i>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 6: AlRasail Ksa -->
-        <article class="chronicle-card" data-category="campaigns" data-project="alrasail">
-          <div class="card-image-wrap">
-            <div class="card-bg-placeholder" style="background-color: #FAF6EE; border: 1px solid var(--color-navy);"></div>
-            <div class="card-info-overlay" style="color: var(--color-navy-dark);">
-              <span class="project-tag" style="background: rgba(47, 124, 122, 0.1);">COMMUNICATION & GIFTS</span>
-              <h3 class="project-title">ALRASAIL KSA</h3>
-              <p class="project-tagline">Social media identity setup for luxury gifting in KSA.</p>
-            </div>
-            <div class="card-reveal-btn">
-              <span>EXPLORE COPY CASE</span>
-              <i class="ph ph-arrow-right" style="font-size: 16px;"></i>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 7: AlRaddadi Telecom -->
-        <article class="chronicle-card" data-category="campaigns" data-project="alraddadi">
-          <div class="card-image-wrap">
-            <div class="card-bg-placeholder" style="background-color: #A7BEC1; color: #123837;"></div>
-            <div class="card-info-overlay">
-              <span class="project-tag">TELECOM & RETAIL</span>
-              <h3 class="project-title">ALRADDADI TELECOM</h3>
-              <p class="project-tagline">Promotion design, product feature copy, and KSA retail messaging.</p>
-            </div>
-            <div class="card-reveal-btn">
-              <span>EXPLORE COPY CASE</span>
-              <i class="ph ph-arrow-right" style="font-size: 16px;"></i>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 8: Hope Trade -->
-        <article class="chronicle-card" data-category="editorial" data-project="hope">
-          <div class="card-image-wrap">
-            <div class="card-bg-placeholder" style="background-color: #123837;"></div>
-            <div class="card-info-overlay">
-              <span class="project-tag">B2B TRADING & AUTOMATION</span>
-              <h3 class="project-title">HOPE TRADE</h3>
-              <p class="project-tagline">Corporate profile structure and industrial website copywriting.</p>
-            </div>
-            <div class="card-reveal-btn">
-              <span>EXPLORE COPY CASE</span>
-              <i class="ph ph-arrow-right" style="font-size: 16px;"></i>
-            </div>
-          </div>
-        </article>
+      <div class="clients-track track-left" id="track-2">
+        <div class="track-content">
+          <span>التكنولوجيا</span>
+          <span class="sep">✦</span>
+          <span>الصحة</span>
+          <span class="sep">✦</span>
+          <span>الضيافة</span>
+          <span class="sep">✦</span>
+          <span>التعليم</span>
+          <span class="sep">✦</span>
+          <span>العقارات</span>
+          <span class="sep">✦</span>
+          <span>السيارات</span>
+          <span class="sep">✦</span>
+          <span>الرياضة</span>
+          <span class="sep">✦</span>
+          <span>الإعلام</span>
+          <span class="sep">✦</span>
+        </div>
+        <div class="track-content" aria-hidden="true">
+          <span>التكنولوجيا</span>
+          <span class="sep">✦</span>
+          <span>الصحة</span>
+          <span class="sep">✦</span>
+          <span>الضيافة</span>
+          <span class="sep">✦</span>
+          <span>التعليم</span>
+          <span class="sep">✦</span>
+          <span>العقارات</span>
+          <span class="sep">✦</span>
+          <span>السيارات</span>
+          <span class="sep">✦</span>
+          <span>الرياضة</span>
+          <span class="sep">✦</span>
+          <span>الإعلام</span>
+          <span class="sep">✦</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Section: Narrative Timeline -->
-  <section class="section-canvas timeline-section" id="narrative">
+  <!-- ========== DIVIDER 4 ========== -->
+  <section class="divider-section reveal-divider">
+    <div class="divider-content">
+      <p class="divider-ar">"لا تبع منتجاً.. ابعث رسالة."</p>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO ========== -->
+  <section class="section portfolio-section" id="portfolio">
     <div class="container">
-      <div class="section-header">
-        <span class="section-index">04 / THE NARRATIVE</span>
-        <h2 class="section-title">PROFESSIONAL TIMELINE</h2>
-        <p class="section-subtitle">A linear look at the journey of crafting narratives for regional and international entities.</p>
+      <div class="section-header-center">
+        <span class="section-label">أعمالي</span>
+        <h2 class="section-title-en">Selected Work</h2>
       </div>
 
-      <div class="timeline-trail scroll-reveal">
-        <!-- Milestone 1 -->
-        <div class="timeline-step">
-          <div class="step-meta">
-            <span class="step-date">Jan 2025 – Present</span>
-            <span class="step-location">Saudi Arabia | Remote</span>
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="luxury">لوكسري</button>
+        <button class="filter-btn" data-filter="digital">تسويق رقمي</button>
+        <button class="filter-btn" data-filter="tech">تكنولوجيا</button>
+        <button class="filter-btn" data-filter="content">محتوى</button>
+      </div>
+
+      <div class="portfolio-grid reveal-cards">
+        <div class="portfolio-item" data-project="1" data-category="luxury">
+          <div class="portfolio-bg" style="background: linear-gradient(135deg, #2F7C7A, #1A4E4C);"></div>
+          <div class="portfolio-overlay"></div>
+          <div class="portfolio-badge">01</div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">لوكسري</span>
+            <h3 class="portfolio-title">Virginia</h3>
+            <p class="portfolio-desc">حملة إطلاق لماركة عطور ومستحضرات تجميل فاخرة</p>
           </div>
-          <div class="step-dot"></div>
-          <div class="step-details">
-            <h3 class="step-company">Green Web Tech</h3>
-            <span class="step-role">Senior Content Creator & Campaign Copywriter</span>
-            <p class="step-desc">Directing content strategies across multiple GCC verticals. Designing localized campaigns, social calendars, landing page wireframes, and B2B communication materials that speak to the Saudi demographics.</p>
+          <div class="portfolio-action">
+            <span>عرض المشروع</span>
+            <i class="fas fa-arrow-left"></i>
           </div>
         </div>
 
-        <!-- Milestone 2 -->
-        <div class="timeline-step">
-          <div class="step-meta">
-            <span class="step-date">Apr 2025 – Jan 2026</span>
-            <span class="step-location">Egypt | On-site</span>
+        <div class="portfolio-item" data-project="2" data-category="content">
+          <div class="portfolio-bg" style="background: linear-gradient(135deg, #A7BEC1, #8BA8AB);"></div>
+          <div class="portfolio-overlay"></div>
+          <div class="portfolio-badge">02</div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">ضيافة</span>
+            <h3 class="portfolio-title">Lee Parc</h3>
+            <p class="portfolio-desc">استراتيجية محتوى لمجتمع سكني فاخر في الرياض</p>
           </div>
-          <div class="step-dot"></div>
-          <div class="step-details">
-            <h3 class="step-company">Vision Edit</h3>
-            <span class="step-role">Lead Content Planner (F&B & Hospitality Focus)</span>
-            <p class="step-desc">Managed end-to-end creative direction and calendar concepts for high-profile hospitality, restaurant, and cafe brands. Directed promotional event scripts and engagement campaigns.</p>
-          </div>
-        </div>
-
-        <!-- Milestone 3 -->
-        <div class="timeline-step">
-          <div class="step-meta">
-            <span class="step-date">2023 – 2025</span>
-            <span class="step-location">Riyadh, Saudi Arabia | Remote</span>
-          </div>
-          <div class="step-dot"></div>
-          <div class="step-details">
-            <h3 class="step-company">Sumt Agency</h3>
-            <span class="step-role">Content Writer & Brand Voice Consultant</span>
-            <p class="step-desc">Built initial brand voice kits and messaging parameters for tech platforms and consulting agencies in Saudi Arabia. Wrote high-intent social copy driving user signups.</p>
+          <div class="portfolio-action">
+            <span>عرض المشروع</span>
+            <i class="fas fa-arrow-left"></i>
           </div>
         </div>
 
-        <!-- Milestone 4 -->
-        <div class="timeline-step">
-          <div class="step-meta">
-            <span class="step-date">2022 – Present</span>
-            <span class="step-location">GCC & Egypt | Freelance</span>
+        <div class="portfolio-item" data-project="3" data-category="tech">
+          <div class="portfolio-bg" style="background: linear-gradient(135deg, #123837, #0D2D2B);"></div>
+          <div class="portfolio-overlay"></div>
+          <div class="portfolio-badge">03</div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">تكنولوجيا</span>
+            <h3 class="portfolio-title">Alwajeeh Telecom</h3>
+            <p class="portfolio-desc">محتوى موقع وحملات إطلاق في السعودية</p>
           </div>
-          <div class="step-dot"></div>
-          <div class="step-details">
-            <h3 class="step-company">Independent Creative Counsel</h3>
-            <span class="step-role">Senior Freelance Copywriter</span>
-            <p class="step-desc">Partnering directly with digital agencies, personal brands, medical centers, and startup founders to craft bespoke landing page copy, pitch decks, and brand manifestos.</p>
+          <div class="portfolio-action">
+            <span>عرض المشروع</span>
+            <i class="fas fa-arrow-left"></i>
           </div>
         </div>
 
-        <!-- Milestone 5 -->
-        <div class="timeline-step">
-          <div class="step-meta">
-            <span class="step-date">Sep 2023 – Feb 2024</span>
-            <span class="step-location">Egypt | On-site</span>
+        <div class="portfolio-item" data-project="4" data-category="digital">
+          <div class="portfolio-bg" style="background: linear-gradient(135deg, #2C5F5D, #1E4240);"></div>
+          <div class="portfolio-overlay"></div>
+          <div class="portfolio-badge">04</div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">تسويق رقمي</span>
+            <h3 class="portfolio-title">Tomato Agency</h3>
+            <p class="portfolio-desc">الهوية الصوتية والاستراتيجية لمكتب تسويق رقمي</p>
           </div>
-          <div class="step-dot"></div>
-          <div class="step-details">
-            <h3 class="step-company">Advertex</h3>
-            <span class="step-role">Content Writer</span>
-            <p class="step-desc">Co-developed promotional planning and ad concept boards. Drafted short-form copy for local businesses, collaborating directly with creative designers.</p>
+          <div class="portfolio-action">
+            <span>عرض المشروع</span>
+            <i class="fas fa-arrow-left"></i>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-project="5" data-category="digital">
+          <div class="portfolio-bg" style="background: linear-gradient(135deg, #C9A96E, #B8955A);"></div>
+          <div class="portfolio-overlay"></div>
+          <div class="portfolio-badge">05</div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">خدمات</span>
+            <h3 class="portfolio-title">Extra Sales</h3>
+            <p class="portfolio-desc">محتوى SEO وأدلة تسويقية شاملة</p>
+          </div>
+          <div class="portfolio-action">
+            <span>عرض المشروع</span>
+            <i class="fas fa-arrow-left"></i>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-project="6" data-category="luxury">
+          <div class="portfolio-bg" style="background: linear-gradient(135deg, #8B7355, #6D5942);"></div>
+          <div class="portfolio-overlay"></div>
+          <div class="portfolio-badge">06</div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">هدايا</span>
+            <h3 class="portfolio-title">AlRasail</h3>
+            <p class="portfolio-desc">هوية سوشيال ميديا لعلامة هدايا فاخرة</p>
+          </div>
+          <div class="portfolio-action">
+            <span>عرض المشروع</span>
+            <i class="fas fa-arrow-left"></i>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section: Quote (The Manifesto) -->
-  <section class="manifesto-section" id="manifesto">
-    <canvas class="section-canvas-3d" id="three-manifesto"></canvas>
-    <div class="manifesto-glow"></div>
-    <div class="container">
-      <div class="manifesto-wrap">
-        <span class="manifesto-index">THE WRITER'S MANIFESTO</span>
-        <blockquote class="manifesto-quote">
-          "Great brands are remembered by<br>
-          <span class="serif-italic">how they communicate.</span>"
-        </blockquote>
-        <div class="manifesto-author">— ASMAA</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section: Dialogue (Contact Experience) -->
-  <section class="section-canvas dialogue-section" id="dialogue">
-    <canvas class="section-canvas-3d" id="three-contact"></canvas>
-    <div class="container">
-      <div class="dialogue-grid">
-        <!-- Left: Editorial Content -->
-        <div class="dialogue-info">
-          <span class="section-index">05 / DIALOGUE</span>
-          <h2 class="dialogue-title">
-            Let's Create<br>
-            Something Meaningful.
-          </h2>
-          <p class="dialogue-lead">
-            Looking for content that reflects your brand and speaks to the right audience?
-          </p>
-          <p class="dialogue-text">
-            I help selective brands in Saudi Arabia, the wider GCC region, and Egypt establish clarity, structure, and high commercial conversions. Reach out directly to discuss content strategies, copy audits, or freelance contracts.
-          </p>
-
-          <!-- Luxury Contacts -->
-          <div class="dialogue-contacts">
-            <a href="mailto:hello@asmaawrites.com" class="contact-card-link magnetic-target">
-              <div class="contact-icon-wrap">
-                <i class="ph ph-envelope-simple" style="font-size: 22px;"></i>
-              </div>
-              <div class="contact-text-col">
-                <span class="contact-label">EMAIL DIRECT</span>
-                <span class="contact-value">hello@asmaawrites.com</span>
-              </div>
-            </a>
-            <a href="https://wa.me/+201152069637" target="_blank" rel="noopener" class="contact-card-link magnetic-target">
-              <div class="contact-icon-wrap">
-                <i class="ph ph-whatsapp-logo" style="font-size: 22px;"></i>
-              </div>
-              <div class="contact-text-col">
-                <span class="contact-label">WHATSAPP DIRECT</span>
-                <span class="contact-value">+20 115 206 9637</span>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <!-- Right: Modern Luxury Form -->
-        <div class="dialogue-canvas-card">
-          <form class="luxury-form" id="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully. Let\'s make words work.');">
-            <div class="form-group">
-              <label for="form-name" class="form-label">YOUR NAME</label>
-              <input type="text" id="form-name" class="form-input" placeholder="e.g. Founder, Brand Director" required />
-            </div>
-            
-            <div class="form-group">
-              <label for="form-email" class="form-label">EMAIL ADDRESS</label>
-              <input type="email" id="form-email" class="form-input" placeholder="e.g. name@brand.com" required />
-            </div>
-
-            <div class="form-group">
-              <label for="form-sector" class="form-label">YOUR BRAND SECTOR</label>
-              <select id="form-sector" class="form-select">
-                <option value="luxury">Luxury & Fashion</option>
-                <option value="corporate">Tech & Startups</option>
-                <option value="medical">Medical & Wellness</option>
-                <option value="hospitality">Hospitality & F&B</option>
-                <option value="other">Other Premium Service</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="form-message" class="form-label">THE PROJECT NARRATIVE</label>
-              <textarea id="form-message" rows="4" class="form-textarea" placeholder="Briefly describe what your brand needs to convey..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-block magnetic-target">
-              <span>Initiate Project Conversation</span>
-              <i class="ph ph-arrow-right btn-arrow"></i>
-            </button>
-          </form>
-        </div>
-      </div>
-
-      <!-- Luxury Footer -->
-      <footer class="luxury-footer">
-        <div class="footer-divider"></div>
-        <div class="footer-row">
-          <p class="copyright-text">&copy; 2026 ASMAA. Crafted with absolute purpose. All Rights Reserved.</p>
-          <div class="footer-social-links">
-            <a href="mailto:hello@asmaawrites.com" class="footer-link magnetic-target">
-              <i class="ph ph-envelope-simple footer-icon"></i>
-              Email
-            </a>
-            <a href="https://www.linkedin.com/in/asmaa-adel/" target="_blank" rel="noopener" class="footer-link magnetic-target">
-              <i class="ph ph-linkedin-logo footer-icon"></i>
-              LinkedIn
-            </a>
-            <a href="#" class="footer-link magnetic-target">
-              <i class="ph ph-instagram-logo footer-icon"></i>
-              Instagram
-            </a>
-            <a href="https://wa.me/+201152069637" target="_blank" rel="noopener" class="footer-link magnetic-target">
-              <i class="ph ph-whatsapp-logo footer-icon"></i>
-              WhatsApp
-            </a>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </section>
-
-  <!-- Mobile Bottom Tab Bar (App-like Navigation) -->
-  <div class="mobile-app-nav" id="mobile-app-nav">
-    <a href="#philosophy" class="mobile-app-tab active">
-      <i class="ph ph-user tab-icon"></i>
-      <span class="tab-label">About</span>
-    </a>
-    <a href="#spectrum" class="mobile-app-tab">
-      <i class="ph ph-squares-four tab-icon"></i>
-      <span class="tab-label">Industries</span>
-    </a>
-    <a href="#craft" class="mobile-app-tab">
-      <i class="ph ph-toolbox tab-icon"></i>
-      <span class="tab-label">Services</span>
-    </a>
-    <a href="#chronicles" class="mobile-app-tab">
-      <i class="ph ph-briefcase tab-icon"></i>
-      <span class="tab-label">Portfolio</span>
-    </a>
-    <a href="#dialogue" class="mobile-app-tab">
-      <i class="ph ph-chat-teardrop tab-icon"></i>
-      <span class="tab-label">Contact</span>
-    </a>
-  </div>
-
-  <!-- Interactive Project Drawer (Luxury Slide-out Panel) -->
-  <div class="project-drawer" id="project-drawer" aria-hidden="true">
-    <div class="drawer-backdrop" id="drawer-backdrop"></div>
-    <div class="drawer-shell">
-      <button class="drawer-close magnetic-target" id="drawer-close" aria-label="Close details">
-        <span>CLOSE</span>
-        <i class="ph ph-x" style="font-size: 16px;"></i>
+  <!-- ========== LIGHTBOX ========== -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close">
+        <i class="fas fa-times"></i>
       </button>
-
-      <div class="drawer-body">
-        <!-- Content gets injected dynamically by JavaScript -->
-        <div id="drawer-content-placeholder"></div>
+      <div class="lightbox-header">
+        <span class="lb-badge" id="lb-badge"></span>
+        <h3 class="lb-title" id="lb-title"></h3>
+      </div>
+      <div class="lightbox-body" id="lightbox-body">
+      </div>
+      <div class="lightbox-footer">
+        <div class="lb-meta" id="lb-meta"></div>
+        <div class="lb-copy" id="lb-copy"></div>
       </div>
     </div>
   </div>
 
-  <!-- Back to Top Button -->
-  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
-    <i class="ph ph-caret-up" style="font-size: 24px;"></i>
-  </button>
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="section-label">آراء العملاء</span>
+        <h2 class="section-title-en">What Clients Say</h2>
+      </div>
+
+      <div class="testimonials-grid reveal-cards">
+        <div class="testimonial-card">
+          <div class="testi-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testi-text">"أسماء فهمت هوية علامتنا التجارية من أول جلسة. المحتوى اللي قدمته كان أكثر من رائع وساهم في زيادة مبيعاتنا بشكل ملحوظ."</p>
+          <div class="testi-author">
+            <strong>محمد السيد</strong>
+            <span>مؤسس علامة تجارية - الرياض</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testi-text">"احترافية في العمل، التزام بالمواعيد، وفهم عميق للسوق السعودي. أسماء هي خيارنا الأول لأي مشروع كتابة محتوى."</p>
+          <div class="testi-author">
+            <strong>نورة القحطاني</strong>
+            <span>مديرة تسويق - جدة</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testi-text">"من أفضل كاتبات المحتوى اللي تعاملت معاهم. أسلوبها راقٍ ومحترف، وقدرتها على صياغة النصوص الإعلانية مذهلة."</p>
+          <div class="testi-author">
+            <strong>خالد العتيبي</strong>
+            <span>شريك مؤسس - وكالة تسويق</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-content">
+        <span class="cta-label">تواصل معي</span>
+        <h2 class="cta-title">مستعدين تلاقوا الكلمات المناسبة لعلامتكم التجارية؟</h2>
+        <p class="cta-text">دعنا نبني معاً استراتيجية محتوى تعكس هوية علامتك وتوصل رسالتك لجمهورك المستهدف.</p>
+        <a href="mailto:hello@asmaawrites.com" class="cta-btn">
+          <i class="fas fa-envelope"></i>
+          hello@asmaawrites.com
+        </a>
+        <a href="https://wa.me/+201152069637" target="_blank" rel="noopener" class="cta-btn cta-btn-wa">
+          <i class="fab fa-whatsapp"></i>
+          +20 115 206 9637
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3 class="footer-name">أسماء عادل</h3>
+          <p class="footer-title">كاتبة محتوى ومؤلفة نصوص</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/asmaa-adel/" target="_blank" rel="noopener" class="social-link">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://wa.me/+201152069637" target="_blank" rel="noopener" class="social-link">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="mailto:hello@asmaawrites.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 أسماء. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
-  <script src="three-bg.js"></script>
 </body>
-
 </html>
